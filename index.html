@@ -8,10 +8,12 @@
 
     Tentei deixar o mais parecida possível, com meus conhecimentos atuais de HTML e CSS.
 
-    Planejei o layout para funcionar na resolução HD 720p (1280x720).
-    Ainda não tentei torná-la responsiva.
--->
+    Usei um pouco de js para o menu Mobile.
 
+    Consegui deixar o site responsivo! 
+
+    Só falta configurar o menu mobile.
+-->
 
 
 <!DOCTYPE html>
@@ -21,28 +23,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="myTunes, um serviço de streaming de mídia">
+    <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
+
     <title>myTunes</title>
 </head>
+
+
 <body>
     <section id="inicio"class="primeira-secao">
+
         <header>
-            <nav class="menu">
-                <ul class="menu">
-                    <li><a href="#" class="link-cabecalho">myTunes</a></li>
-                    <li><a href="#" class="link-cabecalho">Overview</a></li>
-                    <li><a href="#music" class="link-cabecalho">Music</a></li>
-                    <li><a href="#video" class="link-cabecalho">Video</a></li>
-                    <li><a href="#gift-cards" class="link-cabecalho">Gift Cards</a></li>
+            <nav id="menu">
+                <ul>
+                    <li><a href="#" id="logo-menu">myTunes</a></li>
+                    <li class="itens-menu"><a href="#" class="links-menu">Overview</a></li>
+                    <li class="itens-menu"><a href="#music" class="links-menu">Music</a></li>
+                    <li class="itens-menu"><a href="#video" class="links-menu">Video</a></li>
+                    <li class="itens-menu"><a href="#gift-cards" class="links-menu">Gift Cards</a></li>
+                    <li class="btn-mobile"><button id="btn-mobile"></button></li>
                 </ul>
             </nav>
         </header>
+
         <section class="container-texto">
             <h1>myTunes</h1>
             <h2>Your music, movies, and TV shows take center stage.</h2>
             <p>myTunes is the best way to organize and enjoy the music, movies, and TV shows you already have — and shop for the ones you want. Enjoy all the entertainment myTunes has to offer on your Mac and PC.</p>
         </section>
     </section>
+
+
+
     <section id="music" class="segunda-secao">
         <section class="container-texto">
             <h1>
@@ -56,6 +68,9 @@
             <img class="segunda-secao-imagem" src="imagem-segunda-secao.png" alt="myTunes em um tablet e em um smartphone">
         </section>
     </section>
+
+
+
     <section id="video" class="terceira-secao">
         <div class="container-texto">
             <h2 class="subtitulo">The movie and TV collection you always wished for. Granted.</h2>
@@ -64,12 +79,18 @@
             <img src="terceira-secao-imagem.png" alt="site myTunes em um notebook">
         </div>
     </section>
+
+
+
     <section class="quarta-secao">
         <div class="container-texto">
             <h2 class="subtitulo">A world of entertainment. Available wherever you are.</h2>
             <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem veniam nobis, nisi ut expedita, doloribus reprehenderit explicabo non velit repellat alias saepe inventore repellendus? Molestias suscipit eos tempora? Quae quaerat cumque in veritatis impedit dolorum sapiente recusandae minima quo aperiam quam, excepturi quasi totam ad quas? Ipsam laudantium soluta delectus!</p>
         </div>
     </section>
+
+
+
     <section id="gift-cards" class="ultima-secao">
         <div class="container-ultima-secao">
             <img src="ultima-secao-imagem.png" alt="Cartões myTunes">
@@ -77,13 +98,13 @@
                 <h2>Gift Cards</h2>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque expedita tempore quasi omnis a aut et totam illo fuga accusamus dolorum vero, ut harum consectetur. Minima molestias officiis culpa non sed dicta itaque. Et aliquam illo obcaecati molestias veritatis porro.</p>
                 <p>Already have an Orange MyTunes Music Gift Card?</p>
-                <hr>
-                <a href="#">
-                    <img src="simbolo-maior-que.svg" alt="Ícone de seta">
-                    Redeem</a>
+                <a id="redeem" href="#"><img src="simbolo-maior-que.svg" alt="Ícone de seta">Redeem</a>
             </div>
         </div>
     </section>
+
+
+
     <footer>
         <section class="rodape-links">
             <section class="container-rodape">
@@ -121,6 +142,8 @@
                     </ul>
             </section>
         </section>
+
+
         <section class="rodape-final">
             <p>Copyright © 2019 Orange myTunes</p>
         </section>

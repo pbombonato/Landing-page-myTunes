@@ -10,6 +10,10 @@
     font-size: 16px;
 }
 
+#menu-mobile {
+    display: none;
+}
+
 li a {
     text-decoration: none;
     color: #ccc;
@@ -210,7 +214,6 @@ footer {
     }
 
 
-
     header {
         height: 2.5rem;
     }
@@ -258,11 +261,54 @@ footer {
         display: block;
         background-color: white;
         margin-top: 5px;
+        transition: .3s;
     }
-    #menu.active .itens-menu {
-        display: flex;
+
+
+    #menu.active #btn-mobile {
+        border-top: transparent;
     }
+    #menu.active #btn-mobile::before {
+        transform: rotate(-135deg);
+        margin-top: 0px;
+    }
+    #menu.active #btn-mobile::after {
+        transform: rotate(135deg);
+        margin-top: -2px;
+    }
+
     
+    #menu-mobile {
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        visibility: hidden;
+        width: 100%;
+        margin: 2.5rem 0 0;
+        padding: 1rem 1rem 0;
+        height: 0px;
+        transition: .2s;
+        overflow-y: hidden;
+        position: fixed;
+        z-index: 10000;
+        background-color: #333;
+    }
+    #menu-mobile li {
+        list-style: none;
+        padding: 1rem 0;
+        border-bottom: 1px solid #ccc;
+    }
+    #menu-mobile li a {
+        color: white;
+    }
+    #menu-mobile.active {
+        height: calc(100vh - 2.5rem);
+        visibility: visible;
+        overflow-y: auto;
+    }
+
+
+
 
 
     #inicio .container-texto {
@@ -273,8 +319,8 @@ footer {
 
 
     .quarta-secao {
-        padding: 15% 0;
-        height: 100vh;
+        padding: 20% 0;
+        height: 120vh;
     }
 
 
@@ -322,10 +368,7 @@ footer {
 
 /* desktop only */
 @media (min-width: 601px) {
-    #itens-menu-mobile, #menu-mobile, .btn-mobile {
-        display: none;
-    }
-
+    .btn-mobile { display: none; }
 
 
     #menu ul {

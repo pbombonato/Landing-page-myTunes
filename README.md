@@ -7,5 +7,5 @@ Esse foi meu primeiro projeto web. É uma landing page responsiva criada apenas 
 ## Resultado final - PC
 ![Demonstração do resultado do site para PC](imgs/resultado-pc.gif)
 ## Acesse o site!
-[Clique aqui para acessar o site.](https://pbombonato.github.io/Landing-page-myTunes/)
+[Clique aqui para acessar o site.](https://pbombonato.github.io/landing-page-mytunes/)
  

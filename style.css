@@ -41,7 +41,7 @@ header {
 .primeira-secao {
     width: 100%;
     height: 100vh;
-    background: url("imgs/fundo-primeira-secao.jpeg") no-repeat center/cover;
+    background: url("./imgs/fundo-primeira-secao.jpeg") no-repeat center/cover;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -164,7 +164,7 @@ header {
 
 
 .quarta-secao {
-    background: url('imgs/quarta-secao-imagem.jpeg') no-repeat bottom/cover;
+    background: url('./imgs/quarta-secao-imagem.jpeg') no-repeat bottom/cover;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
